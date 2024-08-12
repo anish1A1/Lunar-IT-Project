@@ -1,0 +1,420 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar IT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    {% tailwind_css %}
+    <style>
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        
+    </style>
+</head>
+<body class="bg-slate-900">
+
+  {% include 'lunarapp/header.html' %} 
+    <!-- <main>
+        ~import {} from 'tailwindcss';
+
+       
+<video class="w-full h-1/8" autoplay controls>
+    <source src="/docs/videos/flowbite.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+    </main> -->
+    <main class="p-6 mb-16">
+        <!-- Animation -->
+        <div class="glass p-4 rounded-lg shadow-lg fade-in">
+            <h1 class="text-4xl font-bold text-center text-slate-200 font-effect-outline">Welcome to Lunar IT</h1>
+            <p class="text-center text-gray-500 mt-4">Your satisfaction is our priority</p>
+        </div>
+
+        <!-- Video -->
+        <div class="mt-8 w-full h-96">
+           <div class="flex gap-4">
+
+               <video class="w-1/2 h-full object-cover rounded-lg shadow-lg" autoplay muted loop playsinline>
+                   <source src="{% static 'images/vid.mp4' %}" type="video/mp4">
+                   Your browser does not support the video tag.
+               </video>
+               
+               
+               <!-- Another div for about itself -->
+
+
+               <div class="w-1/2 p-8 bg-slate-800 rounded-lg shadow-lg">
+                <!-- <h2 class=" font-Raleway text-4xl font-bold  text-gray-900 leading-tight antialiased hover:subpixel-antialiased">
+                    Lunar I.T. Solution <br>
+                    for Better Business
+                </h2>
+
+                <div class="flex mt-6 space-x-4">
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition duration-150 ease-in-out">
+                        About Us
+                    </button>
+                    <button class="bg-green-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 transition duration-150 ease-in-out">
+                        Contact Us
+                    </button> -->
+
+                    <h1 class="mb-4 text-4xl font-bold leading-none font-effect-outline tracking-tight text-gray-900 md:text-5xl lg:text-5xl dark:text-teal-200">
+                        Building Projects,  <span class="p-3">Teaching Skills</span> 
+                    </h1>
+                    <p class="mb-6  text-lg font-normal text-pretty text-gray-500 lg:text-xl sm:px-16 xl:px-13 pt-5 dark:text-zinc-200">
+                        At Lunar I.T., we develop innovative tech projects and offer top-notch courses to empower your future.
+                    </p>
+                    
+                    
+                    <div class="flex justify-center gap-x-12  pt-10">
+                        
+                        
+                            <button type="button" class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-blue-700 me-2 mb-2">
+                                Learn More
+                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                                </button>
+
+                            <button type="button" class="text-gray-800 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-blue-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-blue-700 me-2 mb-2">
+                                Contact Us
+                                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                                </button>
+                    </div>
+                    
+                    
+
+                </div>
+           </div>
+            
+        </div>
+
+        <!-- What we do..... -->
+
+        <div class="flex gap-7 mt-16 fade-in justify-center ">
+            <div class="w-auto mt-8">
+                <a href="#" class="flex flex-col p-8 items-center bg-white border border-gray-200 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="object-cover w-full pl-2 rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="{% static 'images/web.jpg' %}" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Web Development</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We build variety of websites and web application with modern designs.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-auto mt-8">
+                <a href="#" class="flex flex-col  p-8 items-center bg-white border border-gray-200 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="object-cover  pl-2 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="{% static 'images/mobile.jpg' %}" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mobile Development</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We develop secure and reliable mobile applications for various services.</p>
+                    </div>
+                </a>
+            </div>
+
+
+            
+        </div>
+        <div class="w-full h-1/3 mt-8 flex justify-center mb-20">
+            <a href="#" class="flex flex-col p-6 items-center bg-white border border-gray-200 rounded-lg shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <img class="object-cover pl-2 w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="{% static 'images/mobile.jpg' %}" alt="">
+                <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Desktop App Development</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">We build all kinds of desktop applications ensuring requirment of client is fulfilled.</p>
+                </div>
+            </a>
+        </div>
+  
+        <!-- About Us Section -->
+        <div class=" pt-8  p-4 bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl fade-in" id="aboutUS">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-4xl text-slate-200 font-bold text-center font-Karla font-effect-outline dark:text">About US</h1>
+                <div class="mt-5 p-4 pb-9">
+                    <p class="text-center px-14 text-pretty text- text-gray-400 dark:text-gray-400">
+                        Since 2073 B.S. (2016 A.D.), we have been working with clients to imagine and build software that people love to use. And we think we’re different. We care about who we work for and the quality of work we deliver, and the impact that makes. And that shows in the results we produce together. 
+                        Lunar IT solution is founded on a commitment to customer <br> happiness , pride in craftsmanship, and making a difference.
+                        </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- For Products -->
+        <div class="mt-10 pt-8 glass p-4 rounded-lg shadow-lg fade-in" id="products">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="text-4xl font-bold text-center font-Karla font-effect-outline text-slate-200">Our Products</h1>
+            </div>
+            {% if product %}
+              
+            
+            
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- First Card -->
+                 
+                 {% for products in product %}
+                    
+                
+                    
+                <div class="bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    <img class="object-cover w-full h-44 rounded-t-lg" src="{{ products.image.url }}" alt="Product 1">
+                    <div class="p-4">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{ products.name }}</h5>
+                        <p class="mb-3 text-sm font-normal text-gray-700 dark:text-gray-400">{{ products.description|truncatewords:25 }}</p>
+                        <a href="{% url 'product_details' products.name %}" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                            <span class="relative px-4 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0 flex items-center">
+                                Learn More
+                                <svg class="w-3.5 h-3.5 ml-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+               
+            </div>
+            {% else %}
+            <p>No product available</p>
+            {% endif %}
+        </div>
+        
+    </main>
+
+    <!-- Our Teams -->
+    <section>
+        <section class=" text-center text-white rounded-lg px-6  fade-in">
+            <div class=" bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl fade-in">
+                <h2 class="text-3xl font-bold mb-4">Meet Our Talented Team</h2>
+                <p class="max-w-2xl mx-auto">We are a group of passionate professionals committed to delivering the best solutions. Get to know the people who make our company great.</p>
+
+            </div>
+        </section>
+
+        <div class="mt-16 text-center fade-in">
+            <!-- <h1 class="text-4xl text-slate-200 mb-10  font-bold text-center font-Karla font-effect-outline dark:text">
+                Our Perfect Team
+            </h1> -->
+            <!-- <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8">Our Perfect Team</h2> -->
+            <div class="grid gap-7 grid-cols-1  md:grid-cols-2 lg:grid-cols-4 ">
+                <div class="team-card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+                    <img class="w-32 h-32 rounded-full mx-auto" src="{% static 'images/ken.png' %}" alt="Team Member 1">
+                    <div class="member-info text-center mt-4">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Alice Johnson</h3>
+                        <p class="text-gray-700 dark:text-gray-400">Lead Developer</p>
+                    </div>
+                </div>
+                
+                
+                <div class="team-card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+                    <img class="w-32 h-32 rounded-full mx-auto" src="{% static 'images/ken.png' %}" alt="Team Member 1">
+                    <div class="member-info text-center mt-4">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Alice Johnson</h3>
+                        <p class="text-gray-700 dark:text-gray-400">Lead Developer</p>
+                    </div>
+                </div>
+                
+                <div class="team-card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+                    <img class="w-32 h-32 rounded-full mx-auto" src="{% static 'images/ken.png' %}" alt="Team Member 1">
+                    <div class="member-info text-center mt-4">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Alice Johnson</h3>
+                        <p class="text-gray-700 dark:text-gray-400">Lead Developer</p>
+                    </div>
+                </div>
+                
+                <div class="team-card bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 p-6 transform transition duration-300 hover:scale-y-100 hover:shadow-xl cursor-pointer ">
+                    <img class="w-32 h-32 rounded-full mx-auto" src="{% static 'images/ken.png' %}" alt="Team Member 1">
+                    <div class="member-info text-center mt-4">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Alice Johnson</h3>
+                        <p class="text-gray-700 dark:text-gray-400">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-900 py-16 text-center">
+        <h2 class="text-3xl font-extrabold text-white mb-8">Our Expertise</h2>
+        <p class="text-lg text-gray-300 mb-12 mx-auto max-w-lg">
+            Explore our core skills and technologies we use to deliver exceptional results.
+        </p>
+        <div class="flex flex-wrap justify-center gap-6">
+            <!-- Skill Card 1 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="{% static 'images/python.svg' %}" alt="Python" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Python</h3>
+                <p class="text-gray-400 text-sm">Versatile language for web, data, and more.</p>
+            </div>
+    
+            <!-- Skill Card 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="{% static 'images/django.svg' %}" alt="Django" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Django</h3>
+                <p class="text-gray-400 text-sm">Framework for efficient web app development.</p>
+            </div>
+    
+            <!-- Skill Card 3 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="{% static 'images/javascript.svg' %}" alt="JavaScript" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">JavaScript</h3>
+                <p class="text-gray-400 text-sm">Dynamic language for interactive web content.      </p>
+            </div>
+    
+            <!-- Skill Card 4 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="{% static 'images/react.svg' %}" alt="React" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">React</h3>
+                <p class="text-gray-400 text-sm">Library for building web and user interfaces. </p>
+            </div>
+    
+            <!-- Skill Card 5 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="{% static 'images/tailwind.svg' %}" alt="CSS" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Tailwind</h3>
+                <p class="text-gray-400 text-sm">Styling language for web design and layout.</p>
+            </div>
+    
+            <!-- Skill Card 6 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105 hover:bg-gray-700">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="{% static 'images/dotnet.svg' %}" alt="Webpack" class="w-12 h-12">
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-2">Dot Net</h3>
+                <p class="text-gray-400 text-sm">Framework for efficient web app development.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+   <!-- Our Courses -->
+<section class="py-16 text-center">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-effect-outline font-bold mb-6 text-gray-100">Our Courses</h2>
+        <p class="text-md mb-8 text-gray-300 max-w-xl mx-auto">Explore our wide range of courses designed to help you achieve your professional goals.</p>
+        
+        {% if course %}
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {% for courses in course %}
+            <div class="bg-gray-800 rounded-lg shadow-md p-4 transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+                <img class="w-full h-32 object-cover rounded-t-lg mb-4" src="{{ courses.image.url }}" alt="Course 1">
+                <h3 class="text-xl font-bold text-center font-Karla font-effect-outline text-slate-200 mb-2">{{ courses.name }}</h3>
+                <p class="text-gray-400 mb-2">{{ courses.description|truncatewords:30 }}</p>
+                <a href="{% url 'course_details' courses.name %}" class="text-indigo-600 font-semibold hover:underline">Learn More</a>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p class="text-gray-300">There are no courses available</p>
+        {% endif %}
+    </div>
+</section>
+
+    
+
+
+    <section class="pt-8  p-4  px-6 py-8 ">
+        <div class="pt-8 text-center  bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl fade-in ">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 font-Karla font-effect-outline text-slate-200">Want to Work With Us?</h2>
+        <p class=" md:text-sm mb-8 max-w-xl mx-auto text-slate-200">
+            We’d love to hear from you. Get in touch to discuss your next project. Whether you have a question, need a quote, or just want to say hi, we’re here to help!
+        </p>
+        <a href="/contact" class="bg-white text-indigo-600 py-3 px-8 rounded-full font-semibold hover:bg-gray-100 transition duration-300 ease-in-out shadow-lg hover:shadow-xl">
+            Contact Us
+        </a>
+        </div>
+    </section>
+       
+        
+    
+    
+    <section class="bg-slate-900 py-20 text-center">
+        <h2 class="text-3xl font-bold mb-10 font-Karla font-effect-outline text-slate-200 ">What Our Clients Say</h2>
+        <div class="flex flex-wrap justify-center gap-8">
+            <div class="testimonial-card p-6 bg-gray-800 rounded-lg shadow-md max-w-sm">
+                <p class="italic mb-4 text-slate-200 ">"The team at Lunar IT exceeded our expectations. Their attention to detail and dedication to our project was phenomenal."</p>
+                <h4 class="font-bold text-slate-50">- Kendrik, Google</h4>
+            </div>
+            
+            <div class="testimonial-card p-6 bg-gray-800 rounded-lg shadow-md max-w-sm">
+                <p class="italic mb-4 text-slate-200 ">"The team at Lunar IT exceeded our expectations. Their attention to detail and dedication to our project was phenomenal."</p>
+                <h4 class="font-bold text-slate-50">- Kendrik, Google</h4>
+            </div>
+
+        </div>
+        
+    </section>
+    
+    <footer class="bg-gray-800 py-10 text-center text-white">
+        <div class="container mx-auto">
+            <p class="mb-4">&copy; 2024 Lunar IT. All Rights Reserved.</p>
+            <div class="flex justify-center gap-4">
+                <a href="https://facebook.com" class="hover:text-gray-400 transition duration-300 ease-in-out">Facebook</a>
+                <a href="https://twitter.com" class="hover:text-gray-400 transition duration-300 ease-in-out">Twitter</a>
+                <a href="https://linkedin.com" class="hover:text-gray-400 transition duration-300 ease-in-out">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    
+    <style>
+        .team-card:hover .member-info {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .team-card .member-info {
+            transition: transform 0.3s, opacity 0.3s;
+            opacity: 0;
+            transform: translateY(10px);
+        }
+        /* Custom styles */
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 10px 20px rgba(90, 64, 141, 0.2);
+        }
+
+        footer .container a {
+            display: inline-block;
+            padding: 0.5rem;
+            border-radius: 0.25rem;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        footer .container a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+    </style>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+</html>
