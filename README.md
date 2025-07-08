@@ -135,5 +135,3 @@ This project is for **educational purposes only** and not intended for commercia
 Special thanks to **Er. Chandra Prasad Acharya (Managing Director)**, **Manish Sir**, and **Itahari International College** for their support and guidance.
 
 ---
-
-Let me know if you’d like me to save this as a **`README.md`** file you can directly upload to your repo!
